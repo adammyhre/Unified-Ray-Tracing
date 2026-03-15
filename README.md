@@ -1,7 +1,5 @@
 # Unity Unified Ray Tracing Example
 
-![Unified Ray Tracing Example](https://github.com/user-attachments/assets/placeholder-add-image-url-here)
-
 ## Description
 
 This example shows how to use Unity’s **Unified Ray Tracing (URT)** API (`UnityEngine.Rendering.UnifiedRayTracing`) to trace rays on the GPU against scene meshes instead of using `Physics.Raycast`. It uses **generators** (a ray grid from a transform), **acceleration structures** built from `MeshRenderer` meshes, and optional **Geometry Pool** integration for real hit attributes (position, normal, UVs). When the Geometry Pool adapter is available, the example uses `FetchGeometry.hlsl` for triangle normals; otherwise it falls back to the public API and an approximate-normal shader.
@@ -59,7 +57,7 @@ Add the component to a GameObject, assign shaders, and press Play. Rays are cast
 
 ## YouTube
 
-[**Watch the tutorial video here**](https://youtu.be/placeholder-add-video-url-here)
+[**Watch the tutorial video here**](https://youtu.be/97cXpbruQFY)
 
 You can also check out my [YouTube channel](https://www.youtube.com/@git-amend?sub_confirmation=1) for more Unity content.
 
@@ -76,3 +74,4 @@ Place this folder (e.g. `Assets/_Project/Scripts/UnifiedRayTracingExample/`) in 
 
 - [Unity – Get started with ray tracing](https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@17.3/manual/UnifiedRayTracing/get-started.html)
 - [Unity – URT workflow](https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@17.3/manual/UnifiedRayTracing/workflow.html)
+- [Unity Discussions Thread](https://discussions.unity.com/t/introducing-the-unifiedraytracing-api/1680597)
